@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirza Syahmina | Portfolio</title>
+    <meta name="description" content="Portfolio of Mirza Syahmina Binti Mustafar, Network Computing student at UNIMAS: education, skills, experience and projects.">
+    <meta name="theme-color" content="#6b1d2f">
+    <meta property="og:title" content="Mirza Syahmina | Portfolio">
+    <meta property="og:description" content="Network Computing student at UNIMAS. Education, skills, experience and projects.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%236b1d2f'/%3E%3Ctext x='50' y='66' font-size='52' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3EM%3C/text%3E%3C/svg%3E">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: {
+                            DEFAULT: '#fdfbf7',
+                            light: '#ffffff',
+                            dark: '#f5f0e6',
+                            muted: '#e9e2d5'
+                        },
+                        burgundy: {
+                            DEFAULT: '#6b1d2f',
+                            dark: '#4a1220',
+                            light: '#8c273e',
+                            subtle: '#f9f1f2'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #fdfbf7; color: #2d2d2d; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        section[id] { scroll-margin-top: 5rem; }
+        .no-scroll { overflow: hidden; }
+        @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto !important; } }
+    </style>
+</head>
+<body class="bg-cream text-neutral-800 antialiased selection:bg-burgundy selection:text-white">
+
+    <!-- Header & Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-cream/90 backdrop-blur-md border-b border-cream-muted transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#home" class="text-xl font-bold tracking-tight text-burgundy-dark hover:text-burgundy transition-colors">
+                Mirza Syahmina
+            </a>
+            
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#home" class="hover:text-burgundy transition-colors">Home</a>
+                <a href="#about" class="hover:text-burgundy transition-colors">About Me</a>
+                <a href="#expertise" class="hover:text-burgundy transition-colors">Expertise & Skills</a>
+                <a href="#experience" class="hover:text-burgundy transition-colors">Experience & Projects</a>
+                <a href="#contact" class="hover:text-burgundy transition-colors">Contact</a>
+            </nav>
+
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-burgundy text-white text-sm font-medium hover:bg-burgundy-dark transition shadow-sm">
+                    Get in Touch
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="menuToggle" class="md:hidden text-2xl text-burgundy-dark focus:outline-none p-2" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileMenu">
+                ☰
+            </button>
+        </div>
+
+        <!-- Mobile Drawer Navigation -->
+        <div id="mobileMenu" class="hidden md:hidden absolute top-20 left-0 w-full bg-cream-light border-b border-cream-muted shadow-lg px-6 py-6 space-y-4">
+            <a href="#home" class="block text-base font-medium hover:text-burgundy transition-colors">Home</a>
+            <a href="#about" class="block text-base font-medium hover:text-burgundy transition-colors">About Me</a>
+            <a href="#expertise" class="block text-base font-medium hover:text-burgundy transition-colors">Expertise & Skills</a>
+            <a href="#experience" class="block text-base font-medium hover:text-burgundy transition-colors">Experience & Projects</a>
+            <a href="#contact" class="block text-base font-medium hover:text-burgundy transition-colors">Contact</a>
+            <div class="pt-4 border-t border-cream-muted">
+                <a href="#contact" class="block text-center w-full py-3 rounded-full bg-burgundy text-white text-sm font-medium">Get in Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section (Picture Excluded) -->
+    <section id="home" style="min-height:100svh" class="min-h-screen pt-32 pb-20 flex items-center bg-gradient-to-b from-cream-dark/50 to-cream">
+        <div class="max-w-4xl mx-auto px-6 w-full text-center space-y-6">
+            <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-burgundy-subtle border border-burgundy/10 text-burgundy text-xs font-semibold uppercase tracking-wider">
+                <span>UNIMAS Computer Science Student</span>
+            </div>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-burgundy-dark leading-tight">
+                Mirza Syahmina Binti Mustafar
+            </h1>
+            <p class="text-lg sm:text-xl font-medium text-neutral-600">
+                Bachelor of Computer Science in Network Computing (Honours) at UNIMAS
+            </p>
+            <p class="text-neutral-600 leading-relaxed max-w-2xl mx-auto text-base">
+                A responsible and enthusiastic professional who thrives in both independent and collaborative settings. Passionate about innovation, creative problem-solving, and building meaningful connections to tackle real-world challenges.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 pt-4">
+                <a href="#experience" class="px-7 py-3.5 rounded-full bg-burgundy text-white font-medium hover:bg-burgundy-dark transition shadow-md shadow-burgundy/10 flex items-center gap-2">
+                    <span>Explore Experience</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                </a>
+                <a href="#contact" class="px-7 py-3.5 rounded-full border border-burgundy/30 text-burgundy-dark font-medium hover:bg-burgundy-subtle transition">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-cream-light">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <h2 class="text-3xl font-bold tracking-tight text-burgundy-dark">About Me & Education</h2>
+                <p class="text-neutral-600">Academic background, educational milestones, and professional profile overview.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Profile Summary Card -->
+                <div class="bg-cream p-8 rounded-2xl border border-cream-muted shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-burgundy-subtle text-burgundy flex items-center justify-center font-bold text-lg mb-6">01</div>
+                        <h3 class="text-xl font-bold text-burgundy-dark mb-3">Profile Summary</h3>
+                        <p class="text-neutral-600 leading-relaxed">
+                            Dedicated and professional network computing student with strong adaptability, leadership skills, and a passion for structured problem-solving, technical operations, and continuous self-improvement.
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-cream-muted flex flex-wrap gap-2 text-xs font-medium text-burgundy">
+                        <span class="px-3 py-1 bg-burgundy-subtle rounded-full">Network Computing</span>
+                        <span class="px-3 py-1 bg-burgundy-subtle rounded-full">Leadership</span>
+                        <span class="px-3 py-1 bg-burgundy-subtle rounded-full">Problem Solving</span>
+                    </div>
+                </div>
+
+                <!-- Education Card -->
+                <div class="bg-cream p-8 rounded-2xl border border-cream-muted shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-burgundy-subtle text-burgundy flex items-center justify-center font-bold text-lg mb-6">02</div>
+                        <h3 class="text-xl font-bold text-burgundy-dark mb-4">Education & Qualifications</h3>
+                        <ul class="space-y-4 text-sm text-neutral-600">
+                            <li class="flex items-start gap-3">
+                                <span class="w-2 h-2 mt-2 rounded-full bg-burgundy flex-shrink-0"></span>
+                                <div>
+                                    <strong class="text-neutral-800">Bachelor of Computer Science in Network Computing (Honours)</strong><br>
+                                    Universiti Malaysia Sarawak (UNIMAS) (2024 - Now)
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="w-2 h-2 mt-2 rounded-full bg-burgundy flex-shrink-0"></span>
+                                <div>
+                                    <strong class="text-neutral-800">Foundation in Physical Science</strong><br>
+                                    Centre for Pre-University Studies (PPPU) UNIMAS (July 2023 - July 2024)
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="w-2 h-2 mt-2 rounded-full bg-burgundy flex-shrink-0"></span>
+                                <div>
+                                    <strong class="text-neutral-800">MUET & Certifications</strong><br>
+                                    Band 4 | ABRSM Grade (1-3) Practical & Theoretical (2018-2020)
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise & Skills Section -->
+    <section id="expertise" class="py-24 bg-cream">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <h2 class="text-3xl font-bold tracking-tight text-burgundy-dark">Expertise & Languages</h2>
+                <p class="text-neutral-600">Core personal competencies, professional skills, and linguistic proficiencies.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Core Expertise Bars -->
+                <div class="bg-cream-light p-8 rounded-2xl border border-cream-muted shadow-sm">
+                    <h3 class="text-xl font-bold text-burgundy-dark mb-6 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-burgundy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        Professional Competencies
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-sm font-medium mb-1"><span>Adaptability to new environment</span><span class="text-burgundy">95%</span></div>
+                            <div class="w-full bg-cream-muted h-2 rounded-full overflow-hidden"><div class="bg-burgundy h-full rounded-full" style="width: 95%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm font-medium mb-1"><span>Analytic and critical thinking</span><span class="text-burgundy">90%</span></div>
+                            <div class="w-full bg-cream-muted h-2 rounded-full overflow-hidden"><div class="bg-burgundy h-full rounded-full" style="width: 90%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm font-medium mb-1"><span>Time management & organization</span><span class="text-burgundy">92%</span></div>
+                            <div class="w-full bg-cream-muted h-2 rounded-full overflow-hidden"><div class="bg-burgundy h-full rounded-full" style="width: 92%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm font-medium mb-1"><span>Instrumentalist</span><span class="text-burgundy">88%</span></div>
+                            <div class="w-full bg-cream-muted h-2 rounded-full overflow-hidden"><div class="bg-burgundy h-full rounded-full" style="width: 88%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm font-medium mb-1"><span>Creative & Innovation</span><span class="text-burgundy">94%</span></div>
+                            <div class="w-full bg-cream-muted h-2 rounded-full overflow-hidden"><div class="bg-burgundy h-full rounded-full" style="width: 94%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Languages & Attributes -->
+                <div class="bg-cream-light p-8 rounded-2xl border border-cream-muted shadow-sm flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-burgundy-dark mb-6 flex items-center gap-2">
+                            <svg class="w-5 h-5 text-burgundy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg>
+                            Languages
+                        </h3>
+                        <div class="grid grid-cols-2 gap-4 mb-8">
+                            <div class="p-4 rounded-xl bg-cream border border-cream-muted text-center">
+                                <p class="font-bold text-burgundy-dark text-lg">English</p>
+                                <p class="text-xs text-neutral-500 mt-1">Professional Working</p>
+                            </div>
+                            <div class="p-4 rounded-xl bg-cream border border-cream-muted text-center">
+                                <p class="font-bold text-burgundy-dark text-lg">Malay</p>
+                                <p class="text-xs text-neutral-500 mt-1">Native / Bilingual</p>
+                            </div>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-burgundy-dark mb-4">Key Strengths</h3>
+                        <ul class="space-y-2 text-sm text-neutral-600">
+                            <li class="flex items-center gap-2">✓ Leadership & Student Guidance</li>
+                            <li class="flex items-center gap-2">✓ Technical Setup & Event Logistics</li>
+                            <li class="flex items-center gap-2">✓ Active Listening & Conflict Resolution</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Extra-Curricular Section -->
+    <section id="experience" class="py-24 bg-cream-light">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+                <h2 class="text-3xl font-bold tracking-tight text-burgundy-dark">Experience & Extra-Curricular</h2>
+                <p class="text-neutral-600">Explore my professional roles, event engagements, and competitive achievements.</p>
+            </div>
+
+            <!-- Search & Filter Controls -->
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mb-12 max-w-4xl mx-auto">
+                <div class="flex flex-wrap gap-2 justify-center" id="filterButtons">
+                    <button data-filter="all" class="filter-btn px-5 py-2 rounded-full text-sm font-medium bg-burgundy text-white transition shadow-sm">All Items</button>
+                    <button data-filter="experience" class="filter-btn px-5 py-2 rounded-full text-sm font-medium bg-cream border border-cream-muted text-neutral-700 hover:bg-burgundy-subtle transition">Experience</button>
+                    <button data-filter="extracurricular" class="filter-btn px-5 py-2 rounded-full text-sm font-medium bg-cream border border-cream-muted text-neutral-700 hover:bg-burgundy-subtle transition">Extra-Curricular</button>
+                </div>
+                <div class="w-full sm:w-72">
+                    <input type="text" id="searchInput" placeholder="Search activities or roles..." class="w-full px-4 py-2.5 rounded-full bg-cream border border-cream-muted text-sm focus:outline-none focus:border-burgundy">
+                </div>
+            </div>
+
+            <!-- Items Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="itemsGrid">
+                
+                <!-- Item 1 -->
+                <div class="item-card bg-cream p-6 rounded-2xl border border-cream-muted shadow-sm flex flex-col justify-between transition hover:shadow-md" data-category="experience" data-title="UNIMAS Faculty of Computer Science">
+                    <div>
+                        <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-burgundy-subtle text-burgundy uppercase tracking-wide">Experience</span>
+                        <h3 class="text-lg font-bold text-burgundy-dark mt-3 mb-1">Faculty of Computer Science & IT, UNIMAS</h3>
+                        <p class="text-xs font-medium text-neutral-500 mb-3">2024 - Now | Kuching, Sarawak</p>
+                        <p class="text-sm text-neutral-600">Sports and Cultural Affairs Executive Committee II for Persatuan Teknologi Maklumat.</p>
+                    </div>
+                    <button onclick="openModal('UNIMAS Faculty', '2024 - Now', 'Sports and Cultural Affairs Executive Committee II for Persatuan Teknologi Maklumat at Universiti Malaysia Sarawak (UNIMAS).')" class="mt-6 text-sm font-semibold text-burgundy hover:underline inline-flex items-center gap-1">
+                        View Details →
+                    </button>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="item-card bg-cream p-6 rounded-2xl border border-cream-muted shadow-sm flex flex-col justify-between transition hover:shadow-md" data-category="experience" data-title="Daisy Dalia Resources">
+                    <div>
+                        <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-burgundy-subtle text-burgundy uppercase tracking-wide">Experience</span>
+                        <h3 class="text-lg font-bold text-burgundy-dark mt-3 mb-1">Daisy Dalia Resources</h3>
+                        <p class="text-xs font-medium text-neutral-500 mb-3">2022 - Now | Kuching, Sarawak</p>
+                        <p class="text-sm text-neutral-600">Part-time booth event assistance, managing customer interactions and on-site logistics operations.</p>
+                    </div>
+                    <button onclick="openModal('Daisy Dalia Resources', '2022 - Now', 'Part-time booth event assistance in Kuching, Sarawak. Handled on-site event setup, customer engagement, and sales coordination.')" class="mt-6 text-sm font-semibold text-burgundy hover:underline inline-flex items-center gap-1">
+                        View Details →
+                    </button>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="item-card bg-cream p-6 rounded-2xl border border-cream-muted shadow-sm flex flex-col justify-between transition hover:shadow-md" data-category="experience" data-title="Maestro Music School">
+                    <div>
+                        <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-burgundy-subtle text-burgundy uppercase tracking-wide">Experience</span>
+                        <h3 class="text-lg font-bold text-burgundy-dark mt-3 mb-1">Maestro Music School</h3>
+                        <p class="text-xs font-medium text-neutral-500 mb-3">2018 - 2020 | Kuching, Sarawak</p>
+                        <p class="text-sm text-neutral-600">Teaching basic music theory & piano for beginners, mentor for Charity Music Therapy Workshop, Young Talent Development.</p>
+                    </div>
+                    <button onclick="openModal('Maestro Music School', '2018 - 2020', 'Served as music tutor teaching basic music theory and piano for beginners. Acted as volunteer mentor for Charity Music Therapy Workshop (2018) and participated in Young Talent Development Programme.')" class="mt-6 text-sm font-semibold text-burgundy hover:underline inline-flex items-center gap-1">
+                        View Details →
+                    </button>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="item-card bg-cream p-6 rounded-2xl border border-cream-muted shadow-sm flex flex-col justify-between transition hover:shadow-md" data-category="experience" data-title="Jabatan Belia Dan Sukan Negeri Sarawak">
+                    <div>
+                        <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-burgundy-subtle text-burgundy uppercase tracking-wide">Experience</span>
+                        <h3 class="text-lg font-bold text-burgundy-dark mt-3 mb-1">Jabatan Belia Dan Sukan Negeri Sarawak</h3>
+                        <p class="text-xs font-medium text-neutral-500 mb-3">July 2024 - Now</p>
+                        <p class="text-sm text-neutral-600">Volunteer for Para Sukma XXI and active member of SATRIA under KBS.</p>
+                    </div>
+                    <button onclick="openModal('Jabatan Belia Dan Sukan Negeri Sarawak', 'July 2024 - Now', 'Volunteer for Para Sukma XXI and official member of SATRIA under KBS. Provided logistical and coordination support for state youth and sports programs.')" class="mt-6 text-sm font-semibold text-burgundy hover:underline inline-flex items-center gap-1">
+                        View Details →
+                    </button>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="item-card bg-cream p-6 rounded-2xl border border-cream-muted shadow-sm flex flex-col justify-between transition hover:shadow-md" data-category="extracurricular" data-title="Hackathon X_UMPSA 2024">
+                    <div>
+                        <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-burgundy-subtle text-burgundy uppercase tracking-wide">Extra-Curricular</span>
+                        <h3 class="text-lg font-bold text-burgundy-dark mt-3 mb-1">Hackathon X_UMPSA 2024</h3>
+                        <p class="text-xs font-medium text-neutral-500 mb-3">October 30, 2024</p>
+                        <p class="text-sm text-neutral-600">Competed under UNIMAS team "Hackivate," developing the HungerBank mobile app aligned with SDG Zero Hunger.</p>
+                    </div>
+                    <button onclick="openModal('Hackathon X_UMPSA 2024', 'October 30, 2024', 'Competed under the UNIMAS team &quot;Hackivate,&quot; developing the HungerBank mobile application aligned with SDG Zero Hunger objectives.')" class="mt-6 text-sm font-semibold text-burgundy hover:underline inline-flex items-center gap-1">
+                        View Details →
+                    </button>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="item-card bg-cream p-6 rounded-2xl border border-cream-muted shadow-sm flex flex-col justify-between transition hover:shadow-md" data-category="extracurricular" data-title="Innovathon Season 2">
+                    <div>
+                        <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-burgundy-subtle text-burgundy uppercase tracking-wide">Extra-Curricular</span>
+                        <h3 class="text-lg font-bold text-burgundy-dark mt-3 mb-1">Innovathon Season 2</h3>
+                        <p class="text-xs font-medium text-neutral-500 mb-3">July 3, 2024</p>
+                        <p class="text-sm text-neutral-600">Lead Inventor for On-the-Go Gas Safety: Mobile Gas Detector with the PRA UNIMAS team.</p>
+                    </div>
+                    <button onclick="openModal('Innovathon Season 2', 'July 3, 2024', 'Lead Inventor for On-the-Go Gas Safety: Mobile Gas Detector with the PRA UNIMAS team.')" class="mt-6 text-sm font-semibold text-burgundy hover:underline inline-flex items-center gap-1">
+                        View Details →
+                    </button>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="item-card bg-cream p-6 rounded-2xl border border-cream-muted shadow-sm flex flex-col justify-between transition hover:shadow-md" data-category="extracurricular" data-title="Asasi UNIMAS ICT Fair 2024">
+                    <div>
+                        <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-burgundy-subtle text-burgundy uppercase tracking-wide">Extra-Curricular</span>
+                        <h3 class="text-lg font-bold text-burgundy-dark mt-3 mb-1">Asasi UNIMAS ICT Fair 2024</h3>
+                        <p class="text-xs font-medium text-neutral-500 mb-3">2024</p>
+                        <p class="text-sm text-neutral-600">Won 1st place in the Computer Component category with the MQ-2 Portable Smoke Detector.</p>
+                    </div>
+                    <button onclick="openModal('Asasi UNIMAS ICT Fair 2024', '2024', 'Won 1st place in the Computer Component category with the MQ-2 Portable Smoke Detector project.')" class="mt-6 text-sm font-semibold text-burgundy hover:underline inline-flex items-center gap-1">
+                        View Details →
+                    </button>
+                </div>
+
+                <!-- Item 8 -->
+                <div class="item-card bg-cream p-6 rounded-2xl border border-cream-muted shadow-sm flex flex-col justify-between transition hover:shadow-md" data-category="extracurricular" data-title="International Young Scientists Innovation Exhibition">
+                    <div>
+                        <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-burgundy-subtle text-burgundy uppercase tracking-wide">Extra-Curricular</span>
+                        <h3 class="text-lg font-bold text-burgundy-dark mt-3 mb-1">IYSIE 2021</h3>
+                        <p class="text-xs font-medium text-neutral-500 mb-3">October 25-30, 2021</p>
+                        <p class="text-sm text-neutral-600">Won Bronze Award for Edible Popsicle Stick and Silver Award for Smoke Alarm Detector with SMK Tunku Abdul Rahman.</p>
+                    </div>
+                    <button onclick="openModal('IYSIE 2021', 'October 25-30, 2021', 'Won Bronze Award for the Edible Popsicle Stick and Silver Award for the Smoke Alarm Detector with the SMK Tunku Abdul Rahman team.')" class="mt-6 text-sm font-semibold text-burgundy hover:underline inline-flex items-center gap-1">
+                        View Details →
+                    </button>
+                </div>
+
+                <!-- Item 9 -->
+                <div class="item-card bg-cream p-6 rounded-2xl border border-cream-muted shadow-sm flex flex-col justify-between transition hover:shadow-md" data-category="extracurricular" data-title="RAC2021 State & National Levels">
+                    <div>
+                        <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-burgundy-subtle text-burgundy uppercase tracking-wide">Extra-Curricular</span>
+                        <h3 class="text-lg font-bold text-burgundy-dark mt-3 mb-1">RAC2021 Coding Challenge</h3>
+                        <p class="text-xs font-medium text-neutral-500 mb-3">June & September 2021</p>
+                        <p class="text-sm text-neutral-600">Earned Distinction in the Live Coding Challenge with Rero in secondary school category.</p>
+                    </div>
+                    <button onclick="openModal('RAC2021', '2021', 'Earned Distinction in the Live Coding Challenge with Window Cleaner X (WCX) in the secondary school category on June 16 and September 14, 2021.')" class="mt-6 text-sm font-semibold text-burgundy hover:underline inline-flex items-center gap-1">
+                        View Details →
+                    </button>
+                </div>
+
+            </div>
+            <p id="noResults" class="hidden text-center text-neutral-500 mt-10">No matching items found.</p>
+        </div>
+    </section>
+
+    <!-- Contact & References Section -->
+    <section id="contact" class="py-24 bg-cream">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <h2 class="text-3xl font-bold tracking-tight text-burgundy-dark">Contact & References</h2>
+                <p class="text-neutral-600">Get in touch for opportunities, collaborations, or professional inquiries.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Contact Details & References -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div class="bg-cream-light p-8 rounded-2xl border border-cream-muted shadow-sm space-y-6">
+                        <h3 class="text-xl font-bold text-burgundy-dark">Direct Information</h3>
+                        <div class="space-y-4 text-sm text-neutral-600">
+                            <p class="flex items-center gap-3">
+                                <span class="w-8 h-8 rounded-lg bg-burgundy-subtle text-burgundy flex items-center justify-center font-bold">📞</span>
+                                <a href="tel:+60129780165" class="hover:text-burgundy font-medium">+60 12-978 0165</a>
+                            </p>
+                            <p class="flex items-center gap-3">
+                                <span class="w-8 h-8 rounded-lg bg-burgundy-subtle text-burgundy flex items-center justify-center font-bold">✉️</span>
+                                <a href="mailto:nana141005@gmail.com" class="hover:text-burgundy font-medium">nana141005@gmail.com</a>
+                            </p>
+                            <p class="flex items-center gap-3">
+                                <span class="w-8 h-8 rounded-lg bg-burgundy-subtle text-burgundy flex items-center justify-center font-bold">📍</span>
+                                <span>Kuching, Sarawak</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- References Card -->
+                    <div class="bg-cream-light p-8 rounded-2xl border border-cream-muted shadow-sm space-y-4">
+                        <h3 class="text-lg font-bold text-burgundy-dark">Professional References</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+                            <div class="p-3 rounded-xl bg-cream border border-cream-muted">
+                                <p class="font-bold text-neutral-800">Nurizzati Syafiqah</p>
+                                <p class="text-neutral-500 mt-1">Daisy Dalia Resources</p>
+                            </div>
+                            <div class="p-3 rounded-xl bg-cream border border-cream-muted">
+                                <p class="font-bold text-neutral-800">Jennifer Ng</p>
+                                <p class="text-neutral-500 mt-1">Maestro Music School</p>
+                            </div>
+                            <div class="p-3 rounded-xl bg-cream border border-cream-muted">
+                                <p class="font-bold text-neutral-800">Coach Lily</p>
+                                <p class="text-neutral-500 mt-1">Kementerian Belia dan Sukan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <div class="bg-cream-light p-8 sm:p-10 rounded-2xl border border-cream-muted shadow-sm">
+                        <h3 class="text-2xl font-bold text-burgundy-dark mb-6">Send Me a Message</h3>
+                        <form id="contactForm" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-neutral-700 mb-2">Your Name</label>
+                                    <input type="text" id="name" required placeholder="Enter your name" class="w-full px-4 py-3 rounded-xl bg-cream border border-cream-muted text-sm focus:outline-none focus:border-burgundy">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-neutral-700 mb-2">Your Email</label>
+                                    <input type="email" id="email" required placeholder="Enter your email" class="w-full px-4 py-3 rounded-xl bg-cream border border-cream-muted text-sm focus:outline-none focus:border-burgundy">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-neutral-700 mb-2">Message</label>
+                                <textarea id="message" rows="5" required placeholder="Type your message here..." class="w-full px-4 py-3 rounded-xl bg-cream border border-cream-muted text-sm focus:outline-none focus:border-burgundy"></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-4 rounded-xl bg-burgundy text-white font-medium hover:bg-burgundy-dark transition shadow-md shadow-burgundy/10">
+                                Send Message
+                            </button>
+                            <p id="formFeedback" class="text-center text-sm font-medium hidden mt-4"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-cream-dark border-t border-cream-muted py-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-neutral-600">
+            <p>&copy; 2026 Mirza Syahmina Binti Mustafar. All rights reserved.</p>
+            <button id="backToTop" class="px-4 py-2 rounded-full bg-cream border border-cream-muted text-burgundy hover:bg-burgundy-subtle transition font-medium">
+                ↑ Back to Top
+            </button>
+        </div>
+    </footer>
+
+    <!-- Interactive Details Modal -->
+    <div id="itemModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm hidden p-4">
+        <div class="bg-cream-light max-w-lg w-full p-8 rounded-3xl shadow-2xl border border-cream-muted relative space-y-4">
+            <button onclick="closeModal()" aria-label="Close" class="absolute top-6 right-6 text-neutral-400 hover:text-neutral-700 text-xl font-bold">✕</button>
+            <span id="modalCategory" class="text-xs font-semibold px-3 py-1 rounded-full bg-burgundy-subtle text-burgundy uppercase tracking-wide">Details</span>
+            <h3 id="modalTitle" class="text-2xl font-bold text-burgundy-dark"></h3>
+            <p id="modalDate" class="text-xs font-medium text-neutral-500"></p>
+            <p id="modalDescription" class="text-neutral-600 text-sm leading-relaxed"></p>
+            <div class="pt-4 flex justify-end">
+                <button onclick="closeModal()" class="px-6 py-2.5 rounded-full bg-burgundy text-white text-sm font-medium hover:bg-burgundy-dark transition">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Implementation -->
+    <script>
+        // Mobile Navigation Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuToggle.addEventListener('click', () => {
+            const open = mobileMenu.classList.toggle('hidden') === false;
+            menuToggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Close mobile menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); menuToggle.setAttribute('aria-expanded','false'); }));
+        });
+
+        // Filtering and Live Search Functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const itemsCards = document.querySelectorAll('.item-card');
+        const searchInput = document.getElementById('searchInput');
+
+        let currentFilter = 'all';
+
+        function filterAndSearchItems() {
+            const query = searchInput.value.toLowerCase().trim();
+
+            itemsCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                const title = card.getAttribute('data-title').toLowerCase();
+                const textContent = (card.querySelector('h3').innerText + ' ' + card.querySelector('p.text-sm').innerText).toLowerCase();
+
+                const matchesFilter = (currentFilter === 'all' || category === currentFilter);
+                const matchesSearch = (title.includes(query) || textContent.includes(query));
+
+                if (matchesFilter && matchesSearch) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            const anyVisible = [...itemsCards].some(c => c.style.display !== 'none');
+            document.getElementById('noResults').classList.toggle('hidden', anyVisible);
+        }
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => {
+                    b.classList.remove('bg-burgundy', 'text-white');
+                    b.classList.add('bg-cream', 'border', 'border-cream-muted', 'text-neutral-700');
+                });
+                btn.classList.remove('bg-cream', 'border', 'border-cream-muted', 'text-neutral-700');
+                btn.classList.add('bg-burgundy', 'text-white');
+
+                currentFilter = btn.getAttribute('data-filter');
+                filterAndSearchItems();
+            });
+        });
+
+        searchInput.addEventListener('input', filterAndSearchItems);
+
+        // Modal Functions
+        function openModal(title, date, desc) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalDate').innerText = date;
+            document.getElementById('modalDescription').innerText = desc;
+            document.getElementById('itemModal').classList.remove('hidden');
+            document.body.classList.add('no-scroll');
+        }
+
+        function closeModal() {
+            document.getElementById('itemModal').classList.add('hidden');
+            document.body.classList.remove('no-scroll');
+        }
+
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+
+        // Close modal on background click
+        document.getElementById('itemModal').addEventListener('click', (e) => {
+            if (e.target === document.getElementById('itemModal')) closeModal();
+        });
+
+        // Contact Form Submission
+        const contactForm = document.getElementById('contactForm');
+        const formFeedback = document.getElementById('formFeedback');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // GitHub Pages is static (no server), so open the visitor's email app with the message ready to send
+            const subject = encodeURIComponent('Portfolio message from ' + name);
+            const body = encodeURIComponent(message + '\n\nFrom: ' + name + ' (' + email + ')');
+            window.location.href = 'mailto:nana141005@gmail.com?subject=' + subject + '&body=' + body;
+
+            formFeedback.textContent = "Opening your email app. Please press Send there to deliver your message.";
+            formFeedback.classList.remove('hidden', 'text-red-600');
+            formFeedback.classList.add('text-green-700');
+
+            contactForm.reset();
+            setTimeout(() => { formFeedback.classList.add('hidden'); }, 8000);
+        });
+
+        // Back to Top Button
+        document.getElementById('backToTop').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
